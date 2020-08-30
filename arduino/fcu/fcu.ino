@@ -1,3 +1,6 @@
+
+#include "pins.h"
+
 void setup() {
 }
 

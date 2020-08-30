@@ -20,23 +20,23 @@
 #define APPR_BUTTON_PIN               36
 
 #define BARO_ROTARY_BUTTON_PIN        38
-#define BARO_ROTARY_ENCODER_PIN_1     40
-#define BARO_ROTARY_ENCODER_PIN_2     42
+#define BARO_ROTARY_ENCODER_PIN_A     40
+#define BARO_ROTARY_ENCODER_PIN_B     42
 
 #define SPD_ROTARY_BUTTON_PIN         44
-#define SPD_ROTARY_ENCODER_PIN_1      46
-#define SPD_ROTARY_ENCODER_PIN_2      48
+#define SPD_ROTARY_ENCODER_PIN_A      46
+#define SPD_ROTARY_ENCODER_PIN_B      48
 
 #define HDG_ROTARY_BUTTON_PIN         23
-#define HDG_ROTARY_ENCODER_PIN_1      25
-#define HDG_ROTARY_ENCODER_PIN_2      27
+#define HDG_ROTARY_ENCODER_PIN_A      25
+#define HDG_ROTARY_ENCODER_PIN_B      27
 
 #define ALT_ROTARY_BUTTON_PIN         29
-#define ALT_ROTARY_ENCODER_PIN_1      31
-#define ALT_ROTARY_ENCODER_PIN_2      33
+#define ALT_ROTARY_ENCODER_PIN_A      31
+#define ALT_ROTARY_ENCODER_PIN_B      33
 
 #define VS_ROTARY_BUTTON_PIN          35
-#define VS_ROTARY_ENCODER_PIN_1       37
-#define VS_ROTARY_ENCODER_PIN_2       39
+#define VS_ROTARY_ENCODER_PIN_A       37
+#define VS_ROTARY_ENCODER_PIN_B       39
 
 #endif

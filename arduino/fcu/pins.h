@@ -15,7 +15,7 @@
 
 #define A_THR_BUTTON_PIN              32
 
-#define EPED_BUTTON_PIN               34
+#define EXPED_BUTTON_PIN              34
 
 #define APPR_BUTTON_PIN               36
 

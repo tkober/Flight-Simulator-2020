@@ -49,6 +49,17 @@ void PushableRotaryEncoder::setOnClick(ButtonEventHandler handler) {
   _button.setOnClick(handler);
 }
 
+
+void PushableRotaryEncoder::setOnLongPress(ButtonEventHandler handler) {
+  _button.setOnLongPress(handler);
+}
+
+
+void PushableRotaryEncoder::setLongPressClickTicks(unsigned int ticks) {
+  _button.setLongPressClickTicks(ticks);
+}
+
+
 void PushableRotaryEncoder::setDebounceFilter(int debounceFilter) {
   _debounceFilter = debounceFilter;
 }
@@ -140,4 +151,3 @@ on_bounce:
     }
   }
 }
-

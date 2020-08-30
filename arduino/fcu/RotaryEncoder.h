@@ -24,6 +24,8 @@ class PushableRotaryEncoder {
     void setOnRotateCounterClockwise(RotaryEncoderEventHandler handler);
     
     void setOnClick(ButtonEventHandler handler);
+    void setOnLongPress(ButtonEventHandler handler);
+    void setLongPressClickTicks(unsigned int ticks);
     
     void setDebounceFilter(int debounceFilter);
     void setBoostActivationCount(int boostActivationCount);

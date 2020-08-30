@@ -20,6 +20,7 @@ class Button {
     void setOnLongPress(ButtonEventHandler handler);
   
     void setLongPressClickTicks(unsigned int ticks);
+    void setClickDelayTicks(unsigned int ticks);
     
     void tick();
   
@@ -34,6 +35,8 @@ class Button {
     ButtonEventHandler _onLongPress;
     
     unsigned long _startedTime;
+    unsigned long _lastClick;
+    unsigned long _clickDelay;
 };
 
 #endif

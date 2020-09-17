@@ -1,5 +1,39 @@
 package me.kobair.msfs2020.fcu.lib;
 
 public enum Commands {
-    
+    FD_TOGGLE,
+    ILS_TOGGLE,
+
+    LOC_TOGGLE,
+
+    AP1_TOGGLE,
+    AP2_TOGGLE,
+    A_THR_TOGGLE,
+
+    EXPED_TOGGLE,
+    APPR_TOGGLE,
+
+    BARO_SET_STD,
+    BARO_INCREMENT,
+    BARO_DECREMENT,
+
+    SPD_SELECT,
+    SPD_MANAGED,
+    SPD_INCREMENT,
+    SPD_DECREMENT,
+
+    HDG_SELECT,
+    HDG_MANAGED,
+    HDG_INCREMENT,
+    HDG_DECREMENT,
+
+    ALT_SELECT,
+    ALT_MANAGED,
+    ALT_INCREMENT,
+    ALT_DECREMENT,
+
+
+    LEVEL_OFF,
+    VS_INCREMENT,
+    VS_DECREMENT
 }

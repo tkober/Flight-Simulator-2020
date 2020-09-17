@@ -28,4 +28,12 @@ public class CommandEmitter {
             virtualKeyboard.simulateKeyCombination(keyCombination);
         }
     }
+
+    public boolean hasKeyMappingForCommand(final Command command) {
+        return this.commandToKeyCombinationsMap.containsKey(command);
+    }
+
+    public List<Key> keyMappingForCommand(final Command command) {
+        return this.commandToKeyCombinationsMap.get(command);
+    }
 }

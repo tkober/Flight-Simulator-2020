@@ -1,6 +1,6 @@
 package me.kobair.msfs2020.fcu.lib;
 
-public enum Commands {
+public enum Command {
     FD_TOGGLE,
     ILS_TOGGLE,
 

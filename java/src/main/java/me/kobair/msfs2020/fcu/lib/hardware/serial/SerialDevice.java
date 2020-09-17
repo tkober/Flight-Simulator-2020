@@ -77,15 +77,23 @@ public class SerialDevice implements Device, SerialPortMessageListener {
     }
 
     @Override
-    public void serialEvent(SerialPortEvent event)
-    {
+    public void serialEvent(SerialPortEvent event) {
         final byte[] data = event.getReceivedData();
-        final String text  = new String(data);
+        final String text = new String(data);
         final String commandString = text.trim();
         final Command command = Command.valueOf(commandString);
 
         if (this.commandHandler != null) {
             this.commandHandler.handleCommand(command);
         }
+    }
+
+    @Override
+    public String toString() {
+        return String.format("<SerialDevice@%s connected=%s serialPort=<SerialPort@%s portDescription='%s'>>",
+                Integer.toHexString(hashCode()),
+                this.isConnected(),
+                Integer.toHexString(this.serialPort.hashCode()),
+                this.serialPort.getPortDescription());
     }
 }

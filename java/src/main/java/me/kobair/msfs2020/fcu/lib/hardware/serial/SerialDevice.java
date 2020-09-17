@@ -9,9 +9,13 @@ import me.kobair.msfs2020.fcu.lib.hardware.Device;
 
 public class SerialDevice implements Device, SerialPortMessageListener {
 
-    private SerialPort serialPort;
+    private final SerialPort serialPort;
     private CommandHandler commandHandler;
     private String messageDelimiter = NEW_LINE_MESSAGE_DELIMITER;
+
+    protected SerialDevice(final SerialPort serialPort) {
+        this.serialPort = serialPort;
+    }
 
     protected SerialPort getSerialPort() {
         return this.serialPort;

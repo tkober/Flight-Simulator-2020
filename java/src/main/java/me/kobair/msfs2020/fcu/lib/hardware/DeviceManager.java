@@ -10,9 +10,9 @@ public interface DeviceManager {
 
     Device getManagedDevice(final String name);
 
-    void connectDevice(final Device device) throws DeviceManagementException.IllegalDeviceException;
+    void connectDevice(final Device device) throws DeviceManagementException.UnmanagedDeviceException;
 
-    void disconnectDevice(final Device device) throws DeviceManagementException.IllegalDeviceException;
+    void disconnectDevice(final Device device) throws DeviceManagementException.UnmanagedDeviceException;
 
     void disconnectAllDevices();
 

@@ -13,9 +13,9 @@ public abstract class DeviceManagementException extends Exception {
         }
     }
 
-    public static class IllegalDeviceException extends DeviceManagementException {
+    public static class UnmanagedDeviceException extends DeviceManagementException {
 
-        public IllegalDeviceException(final Device device) {
+        public UnmanagedDeviceException(final Device device) {
             super(String.format("The device %s is not managed by this DeviceManager.", device.toString()));
         }
     }
